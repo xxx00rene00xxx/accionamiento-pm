@@ -179,7 +179,7 @@ table tr td, table tr th {
         <!-- Hero Section: Desenfoque Din mico -->
         <section class="hero-section flex items-end justify-end" id="heroSection">
             <h1 class="text-2xl font-extrabold text-white text-shadow-lg p-4 bg-black bg-opacity-60 rounded-1g">
-                PGP 2026 - Reporte QAQC
+                PGP 2026 - Reporte Puesta en Marcha
             </h1>
         </section>
   <!-- Main Container -->
@@ -188,7 +188,7 @@ table tr td, table tr th {
         <!-- Header Section -->
         <header class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-bold text-[#696158] mb-4 no-print">
-                 Reportes QAQC Mantención VDF - PGP 2026
+                 Check List Puesta en Marcha VDF y PS- PGP 2026
             </h1>
             <p class="text-2xl text-[#696158] max-w-3xl mx-auto no-print">
                 Unidad DCS & Accionamiento - Celulosa Arauco Planta Constitución 
@@ -271,6 +271,9 @@ table tr td, table tr th {
 
              <button onclick="window.location.href='https://accionamiento-pgp-2026.vercel.app/'" class="bg-white border-2 border-[#EA7600] text-[#EA7600] font-black px-6 py-3 rounded-2xl uppercase text-[15px] tracking-widest hover:bg-[#EA7600] hover:text-white transition-all">
                Programación PGP2026                 </button>
+
+			 <button onclick="window.location.href='https://accionamiento-qaqc.vercel.app/'" class="bg-white border-2 border-[#EA7600] text-[#EA7600] font-black px-6 py-3 rounded-2xl uppercase text-[15px] tracking-widest hover:bg-[#EA7600] hover:text-white transition-all">
+               QAQC VDF (Indamax)                 </button>
           
 				<button onclick="window.location.href='https://accionamiento-qaqc-pf7000.vercel.app/'" class="bg-white border-2 border-[#EA7600] text-[#EA7600] font-black px-6 py-3 rounded-2xl uppercase text-[15px] tracking-widest hover:bg-[#EA7600] hover:text-white transition-all">
                QAQC VDF PF7000                 </button>
@@ -281,7 +284,7 @@ table tr td, table tr th {
 
 
                 <div class="flex space-x-6">
-                    <button onclick="switchTab('dashboard-tab')" id="btn-dashboard-tab" class="px-2 py-3 font-black transition tab-active uppercase text-[15px] tracking-widest text-[#696158]">Dashboard QAQC</button>
+                    <button onclick="switchTab('dashboard-tab')" id="btn-dashboard-tab" class="px-2 py-3 font-black transition tab-active uppercase text-[15px] tracking-widest text-[#696158]">Dashboard Puesta en Marcha</button>
                     <button onclick="switchTab('history-tab')" id="btn-history-tab" class="px-2 py-3 font-black transition  uppercase text-[15px] tracking-widest text-[#696158]">Historial General</button>
                     <button onclick="handleNewChecklistBtn()" id="btn-form-tab" class="px-2 py-3 font-black transition uppercase text-[15px] tracking-widest text-[#696158]">Nuevo Registro</button>
                 </div>
@@ -295,7 +298,7 @@ table tr td, table tr th {
             <div id="view-dashboard-tab" class=" space-y-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center justify-center">
-                        <h3 class="text-[10px] font-black text-[#696158] uppercase mb-4">Avance Global QAQC</h3>
+                        <h3 class="text-[10px] font-black text-[#696158] uppercase mb-4">Avance Global Puesta en Marcha</h3>
                         <div class="relative w-32 h-32">
                             <svg class="w-full h-full" viewBox="0 0 36 36">
                                 <path class="text-slate-100" stroke-width="3" fill="none" stroke="currentColor" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
@@ -432,7 +435,7 @@ table tr td, table tr th {
                         <h2 class="text-xs font-black mb-6 text-[#696158] uppercase tracking-widest border-b border-slate-50 pb-4">Responsables</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div><label class="block text-[9px] font-black text-slate-400 uppercase mb-1">Técnico Ejecutor</label><input type="text" name="ejecutado_por_nombre" required class="block w-full rounded-xl border-slate-200 bg-slate-50 p-3 border font-bold outline-none"></div>
-                            <div><label class="block text-[9px] font-black text-slate-400 uppercase mb-1">Supervisor QA/QC</label><input type="text" name="supervisor_nombre" required class="block w-full rounded-xl border-slate-200 bg-slate-50 p-3 border font-bold outline-none"></div>
+                            <div><label class="block text-[9px] font-black text-slate-400 uppercase mb-1">Supervisor Arauco</label><input type="text" name="supervisor_nombre" required class="block w-full rounded-xl border-slate-200 bg-slate-50 p-3 border font-bold outline-none"></div>
                         </div>
                     </div>
                     <!-- Auditoría Independiente -->
