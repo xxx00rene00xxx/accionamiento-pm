@@ -887,8 +887,17 @@ async function loadHistory() {
                     }
                 });
 
-                if (eid) await _supabase.from('respuestas_checklist_vdf_ps_pm').delete().eq('checklist_id', eid);
-                await _supabase.from('respuestas_checklist_vdf_ps_pm').insert(finalResponses);
+				if (eid) {
+                    // Si es edición, usamos upsert resolviendo el conflicto por la clave compuesta
+                    await _supabase
+                        .from('respuestas_checklist_vdf_ps_pm')
+                        .upsert(finalResponses, { onConflict: 'checklist_id,tarea_id' });
+                } else {
+                    // Si es un registro completamente nuevo, inserta normalmente
+                    await _supabase
+                        .from('respuestas_checklist_vdf_ps_pm')
+                        .insert(finalResponses);
+                }
                 
                 showMessage("DATOS GUARDADOS CORRECTAMENTE", "success");
                 resetFormToNew(); loadHistory(); switchTab('dashboard-tab');
